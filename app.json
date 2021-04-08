@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "MAS Safety Procedures",
+    "slug": "mas-safety-procedures-app",
+    "version": "1.1.1",
+    "orientation": "portrait",
+    "icon": "./assets/app/MASLogo1.png",
+    "splash": {
+      "image": "./assets/app/3dholoqr.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.codecreatives.massafety",
+      "buildNumber": "1.1.1",
+      "infoPlist": {
+        "expo-camera": "This app uses Camera to capture pictures.",
+        "expo-image-picker": "This app uses Image Picker to select pictures from Gallery.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSExceptionDomains": {
+            "https://3dholoqr.com/api/": {
+              "NSIncludesSubdomains": true,
+              "NSTemporaryExceptionAllowsInsecureHTTPLoads": true,
+              "NSTemporaryExceptionMinimumTLSVersion": "TLSv1.1"
+            }
+          }
+        }
+      }
+    },
+    "android": {
+      "package": "com.codecreatives.massafety",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "CAMERA_ROLL",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
